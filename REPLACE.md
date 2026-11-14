@@ -1,23 +1,15 @@
-# 相对当前 gh-pages 需要替换的文件
+# 相对 atlascope-pages-highways.zip 的变化
 
-当前线上分支已有行政区 `geo/`。这次只增加高速公路，并更新引用新脚本的页面文件。
-
-## 整目录替换
-- `_next/`（旧哈希不能留）
+高速几何已按路线编号合并后再做拓扑保持简化，不再是互不相连的两点短划。
 
 ## 替换
+- `_next/` 整目录（线图层改到行政区填充之上，白边加橙色线）
 - `index.html`
-- `DATA-LICENSE.txt`
-- `DEPLOY.md`
-- `REPLACE.md`
-
-## 新增
-- `highways/` 全部 JSON（全国线、分省线与出口、搜索索引）
+- `highways/` 全部 JSON，尤其 `national.json` 和各省文件
 
 ## 不用改
 - `geo/`
 - `data/admin-index.json`
 - `.nojekyll`
 - `icon.svg`
-
-最大单文件应低于 25MB。高速数据来自 OpenStreetMap，ODbL。
+- `DATA-LICENSE.txt`（若内容未变可保留；本包内若有更新则覆盖）
