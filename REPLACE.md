@@ -1,27 +1,23 @@
-# 相对上一次 atlascope-pages.zip / gh-pages 要替换的文件
+# 相对当前 gh-pages 需要替换的文件
 
-不要保留旧的 `_next/`。哈希变了，旧脚本和样式不会被新页面引用。
+当前线上分支已有行政区 `geo/`。这次只增加高速公路，并更新引用新脚本的页面文件。
 
 ## 整目录替换
-- `_next/`
+- `_next/`（旧哈希不能留）
 
-## 替换这些根文件
-- `.nojekyll`
-- `404.html`
-- `404/index.html`
-- `data/admin-index.json`
-- `icon.svg`
+## 替换
 - `index.html`
-- `index.txt`
+- `DATA-LICENSE.txt`
+- `DEPLOY.md`
+- `REPLACE.md`
 
 ## 新增
-- `DATA-LICENSE.txt`
-- `_next/static/P50o568OtvaEw5FnxgwZp/_buildManifest.js`
-- `_next/static/P50o568OtvaEw5FnxgwZp/_ssgManifest.js`
-- `_next/static/chunks/app/page-1ab75c8dd9050047.js`
-- `_next/static/css/9502c6b399aa1e6d.css`
-- `geo/` 共 356 个 JSON，按行政区代码同源加载
+- `highways/` 全部 JSON（全国线、分省线与出口、搜索索引）
 
-## 可以删掉、新包不再使用
-- `DEPLOY.md`
-- 旧 `_next/` 下 4 个过期文件
+## 不用改
+- `geo/`
+- `data/admin-index.json`
+- `.nojekyll`
+- `icon.svg`
+
+最大单文件应低于 25MB。高速数据来自 OpenStreetMap，ODbL。

@@ -25,5 +25,16 @@ Atlascope 边界与名称许可
 未使用
 - 阿里云 DataV GeoAtlas / 高德开放平台边界。高德服务协议不允许存储、镜像和再分发，本站不附带这些文件，也不再请求 geo.datav.aliyun.com。
 
+高速公路与出口
+- 数据：OpenStreetMap highway=motorway、highway=motorway_link、highway=motorway_junction
+- 提取：Geofabrik asia/china-261113.osm.pbf
+- 提取文件时间：2026-11-13
+- 本站抓取处理时间：2026-11-14
+- 许可：Open Database License (ODbL) 1.0
+- 署名：© OpenStreetMap contributors
+- https://www.openstreetmap.org/copyright
+- https://download.geofabrik.de/asia/china.html
+- 已知缺失：OSM 没有画到的高速、没有编号或中文名的路段，信息卡留空，不编造。没有名称也没有编号的出口节点没有画成点。全国视图只放抽稀后的高速主线；匝道和有名称或编号的出口在进入省及以下后按省文件加载。很短的匝道未收入。
+
 显示处理
-- 坐标做了约 0.001 度的拓扑保持抽稀，并四舍五入到小数点后 4 位，便于网页加载。这不是另一套边界。
+- 行政区坐标做了约 0.001 度的拓扑保持抽稀，并四舍五入到小数点后 4 位。高速全国线抽稀约 0.012 度，省内主线约 0.003 度。这不是另一套边界。
